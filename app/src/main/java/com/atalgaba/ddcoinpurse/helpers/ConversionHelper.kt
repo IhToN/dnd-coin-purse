@@ -42,5 +42,7 @@ object ConversionHelper {
             )
         )
 
-    fun convert(coins: Double, from: Currency, to: Currency): Double = coins * (conversionTable[from]?.get(to) ?: 0.0)
+    fun getConversionRate(from: Currency, to: Currency) = conversionTable[from]?.get(to) ?: 0.0
+
+    fun convert(coins: Double, from: Currency, to: Currency): Double = coins * getConversionRate(from, to)
 }

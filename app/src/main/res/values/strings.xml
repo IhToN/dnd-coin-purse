@@ -3,23 +3,35 @@
     <string name="title_purse">Purse</string>
     <string name="title_calculator">Calculator</string>
     <string name="title_conversion_rate">Conversion Rate</string>
+
     <!-- coins -->
-    <string name="title_coin_copper">Copper (cp)</string>
-    <string name="title_coin_silver">Silver (sp)</string>
-    <string name="title_coin_electrum">Electrum (ep)</string>
-    <string name="title_coin_gold">Gold (gp)</string>
-    <string name="title_coin_platinum">Platinum (pp)</string>
+    <string name="title_coin_pieces">Coins</string>
+    <string name="title_coin_copper">Copper</string>
+    <string name="title_coin_silver">Silver</string>
+    <string name="title_coin_electrum">Electrum</string>
+    <string name="title_coin_gold">Gold</string>
+    <string name="title_coin_platinum">Platinum</string>
+    <string name="title_coin_copper_shorthand">cp</string>
+    <string name="title_coin_silver_shorthand">sp</string>
+    <string name="title_coin_electrum_shorthand">ep</string>
+    <string name="title_coin_gold_shorthand">gp</string>
+    <string name="title_coin_platinum_shorthand">pp</string>
+
+    <!-- actions -->
+    <string name="action_add">Add</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_overwrite">Overwrite</string>
 
     <!-- preferences -->
-    <string name="preference_copper">copper</string>
-    <string name="preference_silver">silver</string>
-    <string name="preference_electrum">electrum</string>
-    <string name="preference_gold">gold</string>
-    <string name="preference_platinum">platinum</string>
+    <string name="preference_copper" translatable="false">copper</string>
+    <string name="preference_silver" translatable="false">silver</string>
+    <string name="preference_electrum" translatable="false">electrum</string>
+    <string name="preference_gold" translatable="false">gold</string>
+    <string name="preference_platinum" translatable="false">platinum</string>
 
-    <string name="preference_copper_usage">copper_usage</string>
-    <string name="preference_silver_usage">silver_usage</string>
-    <string name="preference_electrum_usage">electrum_usage</string>
-    <string name="preference_gold_usage">gold_usage</string>
-    <string name="preference_platinum_usage">platinum_usage</string>
+    <string name="preference_copper_usage" translatable="false">copper_usage</string>
+    <string name="preference_silver_usage" translatable="false">silver_usage</string>
+    <string name="preference_electrum_usage" translatable="false">electrum_usage</string>
+    <string name="preference_gold_usage" translatable="false">gold_usage</string>
+    <string name="preference_platinum_usage" translatable="false">platinum_usage</string>
 </resources>

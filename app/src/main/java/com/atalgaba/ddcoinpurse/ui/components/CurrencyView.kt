@@ -17,7 +17,9 @@ class CurrencyView : LinearLayout {
     private var quantityTextView: TextView? = null
 
     private val currencyName: String
-        get() = _currency?.let { context.getString(it.stringId) } ?: ""
+        get() = _currency?.let {
+            "${context.getString(it.stringId)} (${context.getString(it.shorthandId)})"
+        } ?: ""
 
     var currency: Currency?
         get() = _currency
