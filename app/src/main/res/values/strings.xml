@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">D&amp;D Coin Purse</string>
+    <string name="title_purse">Purse</string>
+    <string name="title_calculator">Calculator</string>
+    <string name="title_conversion_rate">Conversion Rate</string>
+    <!-- coins -->
+    <string name="title_coin_copper">Copper (cp)</string>
+    <string name="title_coin_silver">Silver (sp)</string>
+    <string name="title_coin_electrum">Electrum (ep)</string>
+    <string name="title_coin_gold">Gold (gp)</string>
+    <string name="title_coin_platinum">Platinum (pp)</string>
+
+    <!-- preferences -->
+    <string name="preference_copper">copper</string>
+    <string name="preference_silver">silver</string>
+    <string name="preference_electrum">electrum</string>
+    <string name="preference_gold">gold</string>
+    <string name="preference_platinum">platinum</string>
+
+    <string name="preference_copper_usage">copper_usage</string>
+    <string name="preference_silver_usage">silver_usage</string>
+    <string name="preference_electrum_usage">electrum_usage</string>
+    <string name="preference_gold_usage">gold_usage</string>
+    <string name="preference_platinum_usage">platinum_usage</string>
+</resources>
