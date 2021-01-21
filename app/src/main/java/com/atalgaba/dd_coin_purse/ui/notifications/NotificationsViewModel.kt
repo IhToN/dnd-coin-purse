@@ -1,4 +1,4 @@
-package com.atalgaba.ddcoinpurse.ui.notifications
+package com.atalgaba.dd_coin_purse.ui.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

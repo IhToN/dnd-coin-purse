@@ -1,4 +1,4 @@
-package com.atalgaba.ddcoinpurse.ui.notifications
+package com.atalgaba.dd_coin_purse.ui.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.atalgaba.ddcoinpurse.R
+import com.atalgaba.dd_coin_purse.R
 
 class NotificationsFragment : Fragment() {
 

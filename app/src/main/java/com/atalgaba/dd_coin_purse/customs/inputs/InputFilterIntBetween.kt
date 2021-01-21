@@ -1,4 +1,4 @@
-package com.atalgaba.ddcoinpurse.customs.inputs
+package com.atalgaba.dd_coin_purse.customs.inputs
 
 import android.text.InputFilter
 import android.text.Spanned

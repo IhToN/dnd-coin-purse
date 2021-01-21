@@ -1,12 +1,14 @@
-package com.atalgaba.ddcoinpurse.ui.components
+package com.atalgaba.dd_coin_purse.ui.components
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.atalgaba.ddcoinpurse.R
-import com.atalgaba.ddcoinpurse.enums.Currency
+import com.atalgaba.dd_coin_purse.R
+import com.atalgaba.dd_coin_purse.customs.persistence.models.Currency
+import com.atalgaba.dd_coin_purse.customs.objects.Currencies
+import com.atalgaba.dd_coin_purse.helpers.ResourcesHelper
 
 class CurrencyView : LinearLayout {
     private var _currency: Currency? = null
@@ -17,9 +19,7 @@ class CurrencyView : LinearLayout {
     private var quantityTextView: TextView? = null
 
     private val currencyName: String
-        get() = _currency?.let {
-            "${context.getString(it.stringId)} (${context.getString(it.shorthandId)})"
-        } ?: ""
+        get() = _currency?.let { "${it.getName(context)} (${it.getCode(context)})" } ?: ""
 
     var currency: Currency?
         get() = _currency
@@ -58,7 +58,8 @@ class CurrencyView : LinearLayout {
         )
 
         if (a.hasValue(R.styleable.CurrencyView_currency)) {
-            _currency = Currency.fromValue(a.getInt(R.styleable.CurrencyView_currency, 0))
+            val currencyId = a.getInt(R.styleable.CurrencyView_currency, 0).toLong()
+            _currency = Currencies.available.firstOrNull { it.id == currencyId }
         }
 
         if (a.hasValue(R.styleable.CurrencyView_quantity)) {

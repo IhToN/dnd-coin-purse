@@ -1,4 +1,4 @@
-package com.atalgaba.ddcoinpurse
+package com.atalgaba.dd_coin_purse
 
 import org.junit.Test
 
