@@ -20,6 +20,7 @@ import com.atalgaba.dd_coin_purse.databinding.FragmentPurseBinding
 import com.atalgaba.dd_coin_purse.helpers.CurrencyHelper
 import com.atalgaba.dd_coin_purse.ui.components.CurrencyView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import kotlin.math.max
@@ -79,15 +80,36 @@ class PurseFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         }
     }
 
+    private fun undoCurrency(currentCurrencies: List<Currency>) {
+        val originalCurrencies = currentCurrencies.map { it to it.quantity }
+        Snackbar.make(mView, R.string.snackbar_purse_modified, Snackbar.LENGTH_SHORT)
+            .setAction(R.string.action_undo) {
+                originalCurrencies.forEach { pair ->
+                    pair.first.quantity = pair.second
+                    pair.first.update()
+                }
+            }.show()
+    }
+
+    private fun undoCurrency(currency: Currency) {
+        val originalQuantity = currency.quantity
+        Snackbar.make(mView, R.string.snackbar_purse_modified, Snackbar.LENGTH_SHORT)
+            .setAction(R.string.action_undo) {
+                currency.quantity = originalQuantity
+                currency.update()
+            }.show()
+    }
+
     private fun showConversionDialog() {
         Log.d(TAG, "Floating Conversion Button Clicked")
         MaterialAlertDialogBuilder(mActivity)
             .setTitle(R.string.dialog_currency_conversion_title)
             .setMessage(R.string.dialog_currency_conversion_message)
             .setPositiveButton(R.string.action_yes) { _, _ ->
-                // todo Add exchange method
                 Log.d(TAG, "Exchange process should be executed")
-                CurrencyHelper.optimizePurse(Currencies.available)
+
+                undoCurrency(Currencies.available)
+                CurrencyHelper.optimizePurse(Currencies.enabled)
             }
             .setNegativeButton(R.string.action_no) { _, _ -> }
             .show()
@@ -127,6 +149,7 @@ class PurseFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
 
                     Log.d(TAG, "New coins: $currentCoins + $inputCoins = $newCoins")
 
+                    undoCurrency(currency)
                     currency.quantity = newCoins
                     currency.update()
                 }
@@ -139,6 +162,7 @@ class PurseFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
 
                     Log.d(TAG, "New coins: $currentCoins + $inputCoins = $newCoins")
 
+                    undoCurrency(currency)
                     currency.quantity = newCoins
                     currency.update()
                 }
@@ -150,21 +174,21 @@ class PurseFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
 
                     Log.d(TAG, "New coins: $currentCoins => $inputCoins")
 
+                    undoCurrency(currency)
                     currency.quantity = inputCoins
                     currency.update()
                 }
                 .create()
 
-            textInputLayout?.editText?.setOnFocusChangeListener { _, _ ->
-                textInputLayout.editText?.postDelayed({
+            textInputLayout?.requestFocus()
+
+
+            dialog.setOnShowListener {
+                textInputLayout?.editText?.postDelayed({
                     val imm: InputMethodManager? =
                         mActivity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
                     imm?.showSoftInput(textInputEditText, InputMethodManager.SHOW_IMPLICIT)
                 }, 50)
-            }
-
-            dialog.setOnShowListener {
-                textInputLayout?.requestFocus()
             }
 
             dialog.show()
