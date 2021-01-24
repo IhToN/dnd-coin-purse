@@ -11,9 +11,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DDCoinPurse">
+        android:theme="@style/Theme.DDCoinPurse.Launcher">
         <activity
-            android:name="com.atalgaba.dd_coin_purse.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>

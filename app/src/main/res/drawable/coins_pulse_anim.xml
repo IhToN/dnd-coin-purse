@@ -1,0 +1,1086 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="100dp"
+            android:height="100dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+            <group android:name="group_290">
+                <group android:name="group_289">
+                    <group android:name="group_25">
+                        <group android:name="group_24">
+                            <group android:name="group_10">
+                                <group android:name="group_9">
+                                    <group android:name="group_2">
+                                        <group android:name="group_1">
+                                            <group android:name="group">
+                                                <path
+                                                    android:name="path"
+                                                    android:pathData="M 44.322 44.703 L 44.322 45.059 C 44.322 44.939 44.334 44.821 44.352 44.703 L 44.322 44.703 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_5">
+                                        <group android:name="group_4">
+                                            <group android:name="group_3">
+                                                <path
+                                                    android:name="path_1"
+                                                    android:pathData="M 64.309 44.703 C 64.327 44.821 64.339 44.939 64.339 45.059 L 64.339 44.703 L 64.309 44.703 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_8">
+                                        <group android:name="group_7">
+                                            <group android:name="group_6">
+                                                <path
+                                                    android:name="path_2"
+                                                    android:pathData="M 54.33 49.873 C 49.986 49.873 46.291 48.542 44.906 46.682 C 44.529 46.175 44.322 45.629 44.322 45.059 L 44.322 48.304 C 44.322 50.962 48.803 53.118 54.331 53.118 C 59.859 53.118 64.34 50.963 64.34 48.304 L 64.34 45.059 C 64.34 45.628 64.133 46.174 63.756 46.682 C 62.37 48.542 58.674 49.873 54.33 49.873 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_11">
+                                <path
+                                    android:name="path_3"
+                                    android:pathData="M 64.309 44.703 C 63.93 42.211 59.609 40.245 54.331 40.245 C 49.053 40.245 44.732 42.211 44.353 44.703 C 44.335 44.821 44.323 44.939 44.323 45.059 C 44.323 45.628 44.53 46.174 44.907 46.682 C 46.292 48.542 49.988 49.873 54.331 49.873 C 58.674 49.873 62.37 48.542 63.755 46.682 C 64.132 46.175 64.339 45.629 64.339 45.059 C 64.339 44.939 64.327 44.821 64.309 44.703 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                            <group android:name="group_22">
+                                <group android:name="group_21">
+                                    <group android:name="group_14">
+                                        <group android:name="group_13">
+                                            <group android:name="group_12">
+                                                <path
+                                                    android:name="path_4"
+                                                    android:pathData="M 44.322 44.703 L 44.322 45.059 C 44.322 44.939 44.334 44.821 44.352 44.703 L 44.322 44.703 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_17">
+                                        <group android:name="group_16">
+                                            <group android:name="group_15">
+                                                <path
+                                                    android:name="path_5"
+                                                    android:pathData="M 64.309 44.703 C 64.327 44.821 64.339 44.939 64.339 45.059 L 64.339 44.703 L 64.309 44.703 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_20">
+                                        <group android:name="group_19">
+                                            <group android:name="group_18">
+                                                <path
+                                                    android:name="path_6"
+                                                    android:pathData="M 54.33 49.873 C 49.986 49.873 46.291 48.542 44.906 46.682 C 44.529 46.175 44.322 45.629 44.322 45.059 L 44.322 48.304 C 44.322 50.962 48.803 53.118 54.331 53.118 C 59.859 53.118 64.34 50.963 64.34 48.304 L 64.34 45.059 C 64.34 45.628 64.133 46.174 63.756 46.682 C 62.37 48.542 58.674 49.873 54.33 49.873 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_23">
+                                <path
+                                    android:name="path_7"
+                                    android:pathData="M 64.309 44.703 C 63.93 42.211 59.609 40.245 54.331 40.245 C 49.053 40.245 44.732 42.211 44.353 44.703 C 44.335 44.821 44.323 44.939 44.323 45.059 C 44.323 45.628 44.53 46.174 44.907 46.682 C 46.292 48.542 49.988 49.873 54.331 49.873 C 58.674 49.873 62.37 48.542 63.755 46.682 C 64.132 46.175 64.339 45.629 64.339 45.059 C 64.339 44.939 64.327 44.821 64.309 44.703 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_39">
+                        <group android:name="group_38">
+                            <group android:name="group_36">
+                                <group android:name="group_35">
+                                    <group android:name="group_28">
+                                        <group android:name="group_27">
+                                            <group android:name="group_26">
+                                                <path
+                                                    android:name="path_8"
+                                                    android:pathData="M 44.322 39.56 L 44.322 39.916 C 44.322 39.796 44.334 39.678 44.352 39.56 L 44.322 39.56 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_31">
+                                        <group android:name="group_30">
+                                            <group android:name="group_29">
+                                                <path
+                                                    android:name="path_9"
+                                                    android:pathData="M 64.309 39.56 C 64.327 39.678 64.339 39.796 64.339 39.916 L 64.339 39.56 L 64.309 39.56 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_34">
+                                        <group android:name="group_33">
+                                            <group android:name="group_32">
+                                                <path
+                                                    android:name="path_10"
+                                                    android:pathData="M 54.33 44.729 C 49.986 44.729 46.291 43.398 44.906 41.538 C 44.529 41.031 44.322 40.485 44.322 39.915 L 44.322 43.16 C 44.322 45.818 48.803 47.974 54.331 47.974 C 59.859 47.974 64.34 45.819 64.34 43.16 L 64.34 39.915 C 64.34 40.484 64.133 41.03 63.756 41.538 C 62.37 43.398 58.674 44.729 54.33 44.729 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_37">
+                                <path
+                                    android:name="path_11"
+                                    android:pathData="M 64.309 39.56 C 63.93 37.068 59.609 35.102 54.331 35.102 C 49.053 35.102 44.732 37.068 44.353 39.56 C 44.335 39.678 44.323 39.796 44.323 39.916 C 44.323 40.485 44.53 41.031 44.907 41.539 C 46.292 43.399 49.988 44.73 54.331 44.73 C 58.674 44.73 62.37 43.399 63.755 41.539 C 64.132 41.032 64.339 40.486 64.339 39.916 C 64.339 39.796 64.327 39.677 64.309 39.56 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_65">
+                        <group android:name="group_64">
+                            <group android:name="group_50">
+                                <group android:name="group_49">
+                                    <group android:name="group_42">
+                                        <group android:name="group_41">
+                                            <group android:name="group_40">
+                                                <path
+                                                    android:name="path_12"
+                                                    android:pathData="M 30.36 57.62 L 30.36 58.015 C 30.36 57.882 30.374 57.75 30.393 57.62 L 30.36 57.62 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_45">
+                                        <group android:name="group_44">
+                                            <group android:name="group_43">
+                                                <path
+                                                    android:name="path_13"
+                                                    android:pathData="M 52.566 57.62 C 52.586 57.751 52.599 57.882 52.599 58.015 L 52.599 57.62 L 52.566 57.62 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_48">
+                                        <group android:name="group_47">
+                                            <group android:name="group_46">
+                                                <path
+                                                    android:name="path_14"
+                                                    android:pathData="M 41.48 63.364 C 36.654 63.364 32.548 61.885 31.009 59.819 C 30.59 59.256 30.36 58.649 30.36 58.016 L 30.36 61.621 C 30.36 64.575 35.339 66.969 41.48 66.969 C 47.621 66.969 52.6 64.575 52.6 61.621 L 52.6 58.016 C 52.6 58.649 52.37 59.255 51.951 59.819 C 50.412 61.885 46.306 63.364 41.48 63.364 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_51">
+                                <path
+                                    android:name="path_15"
+                                    android:pathData="M 52.566 57.62 C 52.145 54.851 47.344 52.667 41.479 52.667 C 35.614 52.667 30.813 54.851 30.392 57.62 C 30.371 57.751 30.36 57.883 30.359 58.015 C 30.359 58.648 30.589 59.254 31.008 59.818 C 32.546 61.885 36.653 63.363 41.479 63.363 C 46.305 63.363 50.411 61.884 51.95 59.818 C 52.369 59.255 52.599 58.648 52.599 58.015 C 52.599 57.883 52.587 57.751 52.566 57.62 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                            <group android:name="group_62">
+                                <group android:name="group_61">
+                                    <group android:name="group_54">
+                                        <group android:name="group_53">
+                                            <group android:name="group_52">
+                                                <path
+                                                    android:name="path_16"
+                                                    android:pathData="M 30.36 57.62 L 30.36 58.015 C 30.36 57.882 30.374 57.75 30.393 57.62 L 30.36 57.62 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_57">
+                                        <group android:name="group_56">
+                                            <group android:name="group_55">
+                                                <path
+                                                    android:name="path_17"
+                                                    android:pathData="M 52.566 57.62 C 52.586 57.751 52.599 57.882 52.599 58.015 L 52.599 57.62 L 52.566 57.62 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_60">
+                                        <group android:name="group_59">
+                                            <group android:name="group_58">
+                                                <path
+                                                    android:name="path_18"
+                                                    android:pathData="M 41.48 63.364 C 36.654 63.364 32.548 61.885 31.009 59.819 C 30.59 59.256 30.36 58.649 30.36 58.016 L 30.36 61.621 C 30.36 64.575 35.339 66.969 41.48 66.969 C 47.621 66.969 52.6 64.575 52.6 61.621 L 52.6 58.016 C 52.6 58.649 52.37 59.255 51.951 59.819 C 50.412 61.885 46.306 63.364 41.48 63.364 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_63">
+                                <path
+                                    android:name="path_19"
+                                    android:pathData="M 52.566 57.62 C 52.145 54.851 47.344 52.667 41.479 52.667 C 35.614 52.667 30.813 54.851 30.392 57.62 C 30.371 57.751 30.36 57.883 30.359 58.015 C 30.359 58.648 30.589 59.254 31.008 59.818 C 32.546 61.885 36.653 63.363 41.479 63.363 C 46.305 63.363 50.411 61.884 51.95 59.818 C 52.369 59.255 52.599 58.648 52.599 58.015 C 52.599 57.883 52.587 57.751 52.566 57.62 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_79">
+                        <group android:name="group_78">
+                            <group android:name="group_76">
+                                <group android:name="group_75">
+                                    <group android:name="group_68">
+                                        <group android:name="group_67">
+                                            <group android:name="group_66">
+                                                <path
+                                                    android:name="path_20"
+                                                    android:pathData="M 30.36 51.905 L 30.36 52.3 C 30.36 52.167 30.374 52.035 30.393 51.905 L 30.36 51.905 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_71">
+                                        <group android:name="group_70">
+                                            <group android:name="group_69">
+                                                <path
+                                                    android:name="path_21"
+                                                    android:pathData="M 52.566 51.905 C 52.586 52.036 52.599 52.167 52.599 52.3 L 52.599 51.905 L 52.566 51.905 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_74">
+                                        <group android:name="group_73">
+                                            <group android:name="group_72">
+                                                <path
+                                                    android:name="path_22"
+                                                    android:pathData="M 41.48 57.649 C 36.654 57.649 32.548 56.17 31.009 54.104 C 30.59 53.541 30.36 52.934 30.36 52.301 L 30.36 55.906 C 30.36 58.86 35.339 61.254 41.48 61.254 C 47.621 61.254 52.6 58.86 52.6 55.906 L 52.6 52.301 C 52.6 52.934 52.37 53.54 51.951 54.104 C 50.412 56.17 46.306 57.649 41.48 57.649 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_77">
+                                <path
+                                    android:name="path_23"
+                                    android:pathData="M 52.566 51.905 C 52.145 49.136 47.344 46.952 41.479 46.952 C 35.614 46.952 30.813 49.136 30.392 51.905 C 30.371 52.036 30.36 52.168 30.359 52.3 C 30.359 52.933 30.589 53.539 31.008 54.103 C 32.546 56.17 36.653 57.648 41.479 57.648 C 46.305 57.648 50.411 56.169 51.95 54.103 C 52.369 53.54 52.599 52.933 52.599 52.3 C 52.598 52.168 52.587 52.036 52.566 51.905 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_93">
+                        <group android:name="group_92">
+                            <group android:name="group_90">
+                                <group android:name="group_89">
+                                    <group android:name="group_82">
+                                        <group android:name="group_81">
+                                            <group android:name="group_80">
+                                                <path
+                                                    android:name="path_24"
+                                                    android:pathData="M 30.36 46.191 L 30.36 46.586 C 30.36 46.453 30.374 46.321 30.393 46.191 L 30.36 46.191 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_85">
+                                        <group android:name="group_84">
+                                            <group android:name="group_83">
+                                                <path
+                                                    android:name="path_25"
+                                                    android:pathData="M 52.566 46.191 C 52.586 46.322 52.599 46.453 52.599 46.586 L 52.599 46.191 L 52.566 46.191 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_88">
+                                        <group android:name="group_87">
+                                            <group android:name="group_86">
+                                                <path
+                                                    android:name="path_26"
+                                                    android:pathData="M 41.48 51.934 C 36.654 51.934 32.548 50.455 31.009 48.389 C 30.59 47.826 30.36 47.219 30.36 46.586 L 30.36 50.191 C 30.36 53.145 35.339 55.539 41.48 55.539 C 47.621 55.539 52.6 53.145 52.6 50.191 L 52.6 46.586 C 52.6 47.219 52.37 47.825 51.951 48.389 C 50.412 50.455 46.306 51.934 41.48 51.934 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_91">
+                                <path
+                                    android:name="path_27"
+                                    android:pathData="M 52.566 46.191 C 52.145 43.422 47.344 41.238 41.479 41.238 C 35.614 41.238 30.813 43.422 30.392 46.191 C 30.371 46.322 30.36 46.454 30.359 46.586 C 30.359 47.219 30.589 47.825 31.008 48.389 C 32.546 50.456 36.653 51.934 41.479 51.934 C 46.305 51.934 50.411 50.455 51.95 48.389 C 52.369 47.826 52.599 47.219 52.599 46.586 C 52.599 46.454 52.588 46.322 52.566 46.191 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_107">
+                        <group android:name="group_106">
+                            <group android:name="group_104">
+                                <group android:name="group_103">
+                                    <group android:name="group_96">
+                                        <group android:name="group_95">
+                                            <group android:name="group_94">
+                                                <path
+                                                    android:name="path_28"
+                                                    android:pathData="M 30.36 40.476 L 30.36 40.871 C 30.36 40.738 30.374 40.606 30.393 40.476 L 30.36 40.476 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_99">
+                                        <group android:name="group_98">
+                                            <group android:name="group_97">
+                                                <path
+                                                    android:name="path_29"
+                                                    android:pathData="M 52.566 40.476 C 52.586 40.607 52.599 40.738 52.599 40.871 L 52.599 40.476 L 52.566 40.476 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_102">
+                                        <group android:name="group_101">
+                                            <group android:name="group_100">
+                                                <path
+                                                    android:name="path_30"
+                                                    android:pathData="M 41.48 46.219 C 36.654 46.219 32.548 44.74 31.009 42.674 C 30.59 42.111 30.36 41.504 30.36 40.871 L 30.36 44.476 C 30.36 47.43 35.339 49.824 41.48 49.824 C 47.621 49.824 52.6 47.43 52.6 44.476 L 52.6 40.871 C 52.6 41.504 52.37 42.11 51.951 42.674 C 50.412 44.74 46.306 46.219 41.48 46.219 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_105">
+                                <path
+                                    android:name="path_31"
+                                    android:pathData="M 52.566 40.476 C 52.145 37.707 47.344 35.523 41.479 35.523 C 35.614 35.523 30.813 37.707 30.392 40.476 C 30.371 40.607 30.36 40.739 30.359 40.871 C 30.359 41.504 30.589 42.11 31.008 42.674 C 32.546 44.741 36.653 46.219 41.479 46.219 C 46.305 46.219 50.411 44.74 51.95 42.674 C 52.369 42.111 52.599 41.504 52.599 40.871 C 52.599 40.739 52.588 40.607 52.566 40.476 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_121">
+                        <group android:name="group_120">
+                            <group android:name="group_118">
+                                <group android:name="group_117">
+                                    <group android:name="group_110">
+                                        <group android:name="group_109">
+                                            <group android:name="group_108">
+                                                <path
+                                                    android:name="path_32"
+                                                    android:pathData="M 30.36 34.761 L 30.36 35.156 C 30.36 35.023 30.374 34.891 30.393 34.761 L 30.36 34.761 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_113">
+                                        <group android:name="group_112">
+                                            <group android:name="group_111">
+                                                <path
+                                                    android:name="path_33"
+                                                    android:pathData="M 52.566 34.761 C 52.586 34.892 52.599 35.023 52.599 35.156 L 52.599 34.761 L 52.566 34.761 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_116">
+                                        <group android:name="group_115">
+                                            <group android:name="group_114">
+                                                <path
+                                                    android:name="path_34"
+                                                    android:pathData="M 41.48 40.504 C 36.654 40.504 32.548 39.025 31.009 36.959 C 30.59 36.396 30.36 35.789 30.36 35.156 L 30.36 38.761 C 30.36 41.715 35.339 44.109 41.48 44.109 C 47.621 44.109 52.6 41.715 52.6 38.761 L 52.6 35.156 C 52.6 35.789 52.37 36.395 51.951 36.959 C 50.412 39.025 46.306 40.504 41.48 40.504 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_119">
+                                <path
+                                    android:name="path_35"
+                                    android:pathData="M 52.566 34.761 C 52.145 31.992 47.344 29.808 41.479 29.808 C 35.614 29.808 30.813 31.992 30.392 34.761 C 30.371 34.892 30.36 35.024 30.359 35.156 C 30.359 35.789 30.589 36.395 31.008 36.959 C 32.546 39.026 36.653 40.504 41.479 40.504 C 46.305 40.504 50.411 39.025 51.95 36.959 C 52.369 36.396 52.599 35.789 52.599 35.156 C 52.599 35.024 52.587 34.892 52.566 34.761 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_135">
+                        <group android:name="group_134">
+                            <group android:name="group_132">
+                                <group android:name="group_131">
+                                    <group android:name="group_124">
+                                        <group android:name="group_123">
+                                            <group android:name="group_122">
+                                                <path
+                                                    android:name="path_36"
+                                                    android:pathData="M 30.36 29.046 L 30.36 29.441 C 30.36 29.308 30.374 29.176 30.393 29.046 L 30.36 29.046 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_127">
+                                        <group android:name="group_126">
+                                            <group android:name="group_125">
+                                                <path
+                                                    android:name="path_37"
+                                                    android:pathData="M 52.566 29.046 C 52.586 29.177 52.599 29.308 52.599 29.441 L 52.599 29.046 L 52.566 29.046 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_130">
+                                        <group android:name="group_129">
+                                            <group android:name="group_128">
+                                                <path
+                                                    android:name="path_38"
+                                                    android:pathData="M 41.48 34.79 C 36.654 34.79 32.548 33.311 31.009 31.245 C 30.59 30.682 30.36 30.075 30.36 29.442 L 30.36 33.047 C 30.36 36.001 35.339 38.395 41.48 38.395 C 47.621 38.395 52.6 36 52.6 33.047 L 52.6 29.442 C 52.6 30.075 52.37 30.681 51.951 31.245 C 50.412 33.311 46.306 34.79 41.48 34.79 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_133">
+                                <path
+                                    android:name="path_39"
+                                    android:pathData="M 52.566 29.046 C 52.145 26.277 47.344 24.093 41.479 24.093 C 35.614 24.093 30.813 26.277 30.392 29.046 C 30.371 29.177 30.36 29.309 30.359 29.441 C 30.359 30.074 30.589 30.68 31.008 31.244 C 32.546 33.311 36.653 34.789 41.479 34.789 C 46.305 34.789 50.411 33.31 51.95 31.244 C 52.369 30.681 52.599 30.074 52.599 29.441 C 52.599 29.309 52.587 29.177 52.566 29.046 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_150">
+                        <group android:name="group_149">
+                            <group android:name="group_146">
+                                <group android:name="group_145">
+                                    <group android:name="group_138">
+                                        <group android:name="group_137">
+                                            <group android:name="group_136">
+                                                <path
+                                                    android:name="path_40"
+                                                    android:pathData="M 7.5 57.62 L 7.5 58.015 C 7.5 57.882 7.514 57.75 7.533 57.62 L 7.5 57.62 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_141">
+                                        <group android:name="group_140">
+                                            <group android:name="group_139">
+                                                <path
+                                                    android:name="path_41"
+                                                    android:pathData="M 29.707 57.62 C 29.727 57.751 29.74 57.882 29.74 58.015 L 29.74 57.62 L 29.707 57.62 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_144">
+                                        <group android:name="group_143">
+                                            <group android:name="group_142">
+                                                <path
+                                                    android:name="path_42"
+                                                    android:pathData="M 18.62 63.364 C 13.794 63.364 9.688 61.885 8.149 59.819 C 7.73 59.255 7.5 58.648 7.5 58.015 L 7.5 61.62 C 7.5 64.574 12.479 66.968 18.62 66.968 C 24.761 66.968 29.74 64.574 29.74 61.62 L 29.74 58.015 C 29.74 58.648 29.51 59.254 29.091 59.818 C 27.553 61.885 23.446 63.364 18.62 63.364 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_147">
+                                <path
+                                    android:name="path_43"
+                                    android:pathData="M 29.707 57.62 C 29.286 54.851 24.485 52.667 18.62 52.667 C 12.755 52.667 7.955 54.851 7.534 57.62 C 7.513 57.751 7.501 57.883 7.5 58.015 C 7.5 58.648 7.73 59.254 8.149 59.818 C 9.687 61.885 13.794 63.363 18.62 63.363 C 23.446 63.363 27.552 61.884 29.091 59.818 C 29.51 59.255 29.74 58.648 29.74 58.015 C 29.739 57.883 29.728 57.751 29.707 57.62 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                            <group android:name="group_148">
+                                <path
+                                    android:name="path_44"
+                                    android:pathData="M 29.707 57.62 C 29.286 54.851 24.485 52.667 18.62 52.667 C 12.755 52.667 7.955 54.851 7.534 57.62 C 7.513 57.751 7.501 57.883 7.5 58.015 C 7.5 58.648 7.73 59.254 8.149 59.818 C 9.687 61.885 13.794 63.363 18.62 63.363 C 23.446 63.363 27.552 61.884 29.091 59.818 C 29.51 59.255 29.74 58.648 29.74 58.015 C 29.739 57.883 29.728 57.751 29.707 57.62 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_164">
+                        <group android:name="group_163">
+                            <group android:name="group_161">
+                                <group android:name="group_160">
+                                    <group android:name="group_153">
+                                        <group android:name="group_152">
+                                            <group android:name="group_151">
+                                                <path
+                                                    android:name="path_45"
+                                                    android:pathData="M 7.5 51.905 L 7.5 52.3 C 7.5 52.167 7.514 52.035 7.533 51.905 L 7.5 51.905 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_156">
+                                        <group android:name="group_155">
+                                            <group android:name="group_154">
+                                                <path
+                                                    android:name="path_46"
+                                                    android:pathData="M 29.707 51.905 C 29.727 52.036 29.74 52.167 29.74 52.3 L 29.74 51.905 L 29.707 51.905 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_159">
+                                        <group android:name="group_158">
+                                            <group android:name="group_157">
+                                                <path
+                                                    android:name="path_47"
+                                                    android:pathData="M 18.62 57.649 C 13.794 57.649 9.688 56.17 8.149 54.104 C 7.73 53.54 7.5 52.933 7.5 52.301 L 7.5 55.906 C 7.5 58.86 12.479 61.254 18.62 61.254 C 24.761 61.254 29.74 58.86 29.74 55.906 L 29.74 52.301 C 29.74 52.934 29.51 53.54 29.091 54.104 C 27.553 56.17 23.446 57.649 18.62 57.649 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_162">
+                                <path
+                                    android:name="path_48"
+                                    android:pathData="M 29.707 51.905 C 29.286 49.136 24.485 46.952 18.62 46.952 C 12.755 46.952 7.955 49.136 7.534 51.905 C 7.514 52.036 7.5 52.168 7.5 52.301 C 7.5 52.934 7.73 53.54 8.149 54.104 C 9.687 56.171 13.794 57.649 18.62 57.649 C 23.446 57.649 27.552 56.17 29.091 54.104 C 29.51 53.541 29.74 52.934 29.74 52.301 C 29.74 52.168 29.727 52.036 29.707 51.905 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_178">
+                        <group android:name="group_177">
+                            <group android:name="group_175">
+                                <group android:name="group_174">
+                                    <group android:name="group_167">
+                                        <group android:name="group_166">
+                                            <group android:name="group_165">
+                                                <path
+                                                    android:name="path_49"
+                                                    android:pathData="M 7.5 46.191 L 7.5 46.586 C 7.5 46.453 7.514 46.321 7.533 46.191 L 7.5 46.191 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_170">
+                                        <group android:name="group_169">
+                                            <group android:name="group_168">
+                                                <path
+                                                    android:name="path_50"
+                                                    android:pathData="M 29.707 46.191 C 29.727 46.322 29.74 46.453 29.74 46.586 L 29.74 46.191 L 29.707 46.191 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_173">
+                                        <group android:name="group_172">
+                                            <group android:name="group_171">
+                                                <path
+                                                    android:name="path_51"
+                                                    android:pathData="M 18.62 51.934 C 13.794 51.934 9.688 50.455 8.149 48.389 C 7.73 47.825 7.5 47.219 7.5 46.586 L 7.5 50.191 C 7.5 53.145 12.479 55.539 18.62 55.539 C 24.761 55.539 29.74 53.145 29.74 50.191 L 29.74 46.586 C 29.74 47.219 29.51 47.825 29.091 48.389 C 27.553 50.455 23.446 51.934 18.62 51.934 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_176">
+                                <path
+                                    android:name="path_52"
+                                    android:pathData="M 29.707 46.191 C 29.286 43.422 24.485 41.238 18.62 41.238 C 12.755 41.238 7.955 43.422 7.534 46.191 C 7.513 46.322 7.501 46.454 7.5 46.586 C 7.5 47.219 7.73 47.825 8.149 48.389 C 9.687 50.456 13.794 51.934 18.62 51.934 C 23.446 51.934 27.552 50.455 29.091 48.389 C 29.51 47.826 29.74 47.219 29.74 46.586 C 29.74 46.453 29.727 46.321 29.707 46.191 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_192">
+                        <group android:name="group_191">
+                            <group android:name="group_189">
+                                <group android:name="group_188">
+                                    <group android:name="group_181">
+                                        <group android:name="group_180">
+                                            <group android:name="group_179">
+                                                <path
+                                                    android:name="path_53"
+                                                    android:pathData="M 7.5 40.476 L 7.5 40.871 C 7.5 40.738 7.514 40.606 7.533 40.476 L 7.5 40.476 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_184">
+                                        <group android:name="group_183">
+                                            <group android:name="group_182">
+                                                <path
+                                                    android:name="path_54"
+                                                    android:pathData="M 29.707 40.476 C 29.727 40.607 29.74 40.738 29.74 40.871 L 29.74 40.476 L 29.707 40.476 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_187">
+                                        <group android:name="group_186">
+                                            <group android:name="group_185">
+                                                <path
+                                                    android:name="path_55"
+                                                    android:pathData="M 18.62 46.219 C 13.794 46.219 9.688 44.74 8.149 42.674 C 7.73 42.11 7.5 41.504 7.5 40.871 L 7.5 44.476 C 7.5 47.43 12.479 49.824 18.62 49.824 C 24.761 49.824 29.74 47.43 29.74 44.476 L 29.74 40.871 C 29.74 41.504 29.51 42.11 29.091 42.674 C 27.553 44.74 23.446 46.219 18.62 46.219 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_190">
+                                <path
+                                    android:name="path_56"
+                                    android:pathData="M 29.707 40.476 C 29.286 37.707 24.485 35.523 18.62 35.523 C 12.755 35.523 7.955 37.707 7.534 40.476 C 7.513 40.607 7.501 40.739 7.5 40.871 C 7.5 41.504 7.73 42.11 8.149 42.674 C 9.687 44.741 13.794 46.219 18.62 46.219 C 23.446 46.219 27.552 44.74 29.091 42.674 C 29.51 42.111 29.74 41.504 29.74 40.871 C 29.74 40.738 29.727 40.606 29.707 40.476 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_218">
+                        <group android:name="group_217">
+                            <group android:name="group_203">
+                                <group android:name="group_202">
+                                    <group android:name="group_195">
+                                        <group android:name="group_194">
+                                            <group android:name="group_193">
+                                                <path
+                                                    android:name="path_57"
+                                                    android:pathData="M 53.219 57.62 L 53.219 58.015 C 53.219 57.882 53.233 57.75 53.252 57.62 L 53.219 57.62 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_198">
+                                        <group android:name="group_197">
+                                            <group android:name="group_196">
+                                                <path
+                                                    android:name="path_58"
+                                                    android:pathData="M 75.426 57.62 C 75.446 57.751 75.459 57.882 75.459 58.015 L 75.459 57.62 L 75.426 57.62 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_201">
+                                        <group android:name="group_200">
+                                            <group android:name="group_199">
+                                                <path
+                                                    android:name="path_59"
+                                                    android:pathData="M 64.339 63.364 C 59.513 63.364 55.407 61.885 53.868 59.819 C 53.449 59.256 53.219 58.649 53.219 58.016 L 53.219 61.621 C 53.219 64.575 58.198 66.969 64.339 66.969 C 70.48 66.969 75.459 64.575 75.459 61.621 L 75.459 58.016 C 75.459 58.649 75.229 59.255 74.81 59.819 C 73.271 61.885 69.165 63.364 64.339 63.364 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_204">
+                                <path
+                                    android:name="path_60"
+                                    android:pathData="M 75.426 57.62 C 75.005 54.851 70.204 52.667 64.339 52.667 C 58.474 52.667 53.673 54.851 53.252 57.62 C 53.231 57.751 53.22 57.883 53.219 58.015 C 53.219 58.648 53.449 59.254 53.868 59.818 C 55.406 61.885 59.513 63.363 64.339 63.363 C 69.165 63.363 73.271 61.884 74.81 59.818 C 75.229 59.255 75.459 58.648 75.459 58.015 C 75.459 57.882 75.445 57.751 75.426 57.62 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                            <group android:name="group_215">
+                                <group android:name="group_214">
+                                    <group android:name="group_207">
+                                        <group android:name="group_206">
+                                            <group android:name="group_205">
+                                                <path
+                                                    android:name="path_61"
+                                                    android:pathData="M 53.219 57.62 L 53.219 58.015 C 53.219 57.882 53.233 57.75 53.252 57.62 L 53.219 57.62 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_210">
+                                        <group android:name="group_209">
+                                            <group android:name="group_208">
+                                                <path
+                                                    android:name="path_62"
+                                                    android:pathData="M 75.426 57.62 C 75.446 57.751 75.459 57.882 75.459 58.015 L 75.459 57.62 L 75.426 57.62 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_213">
+                                        <group android:name="group_212">
+                                            <group android:name="group_211">
+                                                <path
+                                                    android:name="path_63"
+                                                    android:pathData="M 64.339 63.364 C 59.513 63.364 55.407 61.885 53.868 59.819 C 53.449 59.256 53.219 58.649 53.219 58.016 L 53.219 61.621 C 53.219 64.575 58.198 66.969 64.339 66.969 C 70.48 66.969 75.459 64.575 75.459 61.621 L 75.459 58.016 C 75.459 58.649 75.229 59.255 74.81 59.819 C 73.271 61.885 69.165 63.364 64.339 63.364 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_216">
+                                <path
+                                    android:name="path_64"
+                                    android:pathData="M 75.426 57.62 C 75.005 54.851 70.204 52.667 64.339 52.667 C 58.474 52.667 53.673 54.851 53.252 57.62 C 53.231 57.751 53.22 57.883 53.219 58.015 C 53.219 58.648 53.449 59.254 53.868 59.818 C 55.406 61.885 59.513 63.363 64.339 63.363 C 69.165 63.363 73.271 61.884 74.81 59.818 C 75.229 59.255 75.459 58.648 75.459 58.015 C 75.459 57.882 75.445 57.751 75.426 57.62 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_232">
+                        <group android:name="group_231">
+                            <group android:name="group_229">
+                                <group android:name="group_228">
+                                    <group android:name="group_221">
+                                        <group android:name="group_220">
+                                            <group android:name="group_219">
+                                                <path
+                                                    android:name="path_65"
+                                                    android:pathData="M 53.219 51.905 L 53.219 52.3 C 53.219 52.167 53.233 52.035 53.252 51.905 L 53.219 51.905 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_224">
+                                        <group android:name="group_223">
+                                            <group android:name="group_222">
+                                                <path
+                                                    android:name="path_66"
+                                                    android:pathData="M 75.426 51.905 C 75.446 52.036 75.459 52.167 75.459 52.3 L 75.459 51.905 L 75.426 51.905 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_227">
+                                        <group android:name="group_226">
+                                            <group android:name="group_225">
+                                                <path
+                                                    android:name="path_67"
+                                                    android:pathData="M 64.339 57.649 C 59.513 57.649 55.407 56.17 53.868 54.104 C 53.449 53.541 53.219 52.934 53.219 52.301 L 53.219 55.906 C 53.219 58.86 58.198 61.254 64.339 61.254 C 70.48 61.254 75.459 58.86 75.459 55.906 L 75.459 52.301 C 75.459 52.934 75.229 53.54 74.81 54.104 C 73.271 56.17 69.165 57.649 64.339 57.649 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_230">
+                                <path
+                                    android:name="path_68"
+                                    android:pathData="M 75.426 51.905 C 75.005 49.136 70.204 46.952 64.339 46.952 C 58.474 46.952 53.673 49.136 53.252 51.905 C 53.231 52.036 53.22 52.168 53.219 52.3 C 53.219 52.933 53.449 53.539 53.868 54.103 C 55.406 56.17 59.513 57.648 64.339 57.648 C 69.165 57.648 73.271 56.169 74.81 54.103 C 75.229 53.54 75.459 52.933 75.459 52.3 C 75.459 52.168 75.445 52.036 75.426 51.905 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_246">
+                        <group android:name="group_245">
+                            <group android:name="group_243">
+                                <group android:name="group_242">
+                                    <group android:name="group_235">
+                                        <group android:name="group_234">
+                                            <group android:name="group_233">
+                                                <path
+                                                    android:name="path_69"
+                                                    android:pathData="M 72.468 50.912 L 72.293 51.266 C 72.352 51.147 72.423 51.035 72.498 50.927 L 72.468 50.912 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_238">
+                                        <group android:name="group_237">
+                                            <group android:name="group_236">
+                                                <path
+                                                    android:name="path_70"
+                                                    android:pathData="M 92.367 60.769 C 92.327 60.895 92.281 61.019 92.222 61.138 L 92.397 60.784 L 92.367 60.769 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_241">
+                                        <group android:name="group_240">
+                                            <group android:name="group_239">
+                                                <path
+                                                    android:name="path_71"
+                                                    android:pathData="M 79.883 60.994 C 75.559 58.852 72.535 55.704 72.074 53.169 C 71.948 52.478 72.012 51.832 72.292 51.265 L 70.692 54.496 C 69.381 57.143 72.779 61.498 78.282 64.225 C 83.785 66.951 89.309 67.016 90.62 64.369 L 92.22 61.138 C 91.939 61.705 91.464 62.146 90.838 62.465 C 88.544 63.634 84.208 63.137 79.883 60.994 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_244">
+                                <path
+                                    android:name="path_72"
+                                    android:pathData="M 92.367 60.769 C 93.219 58.101 89.886 54.013 84.631 51.409 C 79.376 48.806 74.104 48.632 72.498 50.926 C 72.422 51.034 72.352 51.146 72.293 51.265 C 72.012 51.832 71.949 52.478 72.075 53.169 C 72.536 55.704 75.559 58.852 79.884 60.994 C 84.208 63.136 88.545 63.634 90.84 62.465 C 91.466 62.146 91.941 61.705 92.222 61.138 C 92.281 61.019 92.327 60.895 92.367 60.769 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_260">
+                        <group android:name="group_259">
+                            <group android:name="group_257">
+                                <group android:name="group_256">
+                                    <group android:name="group_249">
+                                        <group android:name="group_248">
+                                            <group android:name="group_247">
+                                                <path
+                                                    android:name="path_73"
+                                                    android:pathData="M 18.62 69.05 L 18.62 69.445 C 18.62 69.312 18.634 69.18 18.653 69.05 L 18.62 69.05 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_252">
+                                        <group android:name="group_251">
+                                            <group android:name="group_250">
+                                                <path
+                                                    android:name="path_74"
+                                                    android:pathData="M 40.827 69.05 C 40.847 69.181 40.86 69.312 40.86 69.445 L 40.86 69.05 L 40.827 69.05 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_255">
+                                        <group android:name="group_254">
+                                            <group android:name="group_253">
+                                                <path
+                                                    android:name="path_75"
+                                                    android:pathData="M 29.741 74.793 C 24.915 74.793 20.809 73.314 19.27 71.248 C 18.851 70.685 18.621 70.078 18.621 69.445 L 18.621 73.05 C 18.621 76.004 23.6 78.398 29.741 78.398 C 35.882 78.398 40.861 76.004 40.861 73.05 L 40.861 69.445 C 40.861 70.078 40.631 70.684 40.212 71.248 C 38.673 73.314 34.566 74.793 29.741 74.793 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_258">
+                                <path
+                                    android:name="path_76"
+                                    android:pathData="M 40.827 69.05 C 40.406 66.281 35.605 64.097 29.74 64.097 C 23.875 64.097 19.074 66.281 18.653 69.05 C 18.632 69.181 18.621 69.313 18.62 69.445 C 18.62 70.078 18.85 70.684 19.269 71.248 C 20.807 73.315 24.914 74.793 29.74 74.793 C 34.566 74.793 38.672 73.314 40.211 71.248 C 40.63 70.685 40.86 70.078 40.86 69.445 C 40.86 69.313 40.848 69.181 40.827 69.05 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_274">
+                        <group android:name="group_273">
+                            <group android:name="group_271">
+                                <group android:name="group_270">
+                                    <group android:name="group_263">
+                                        <group android:name="group_262">
+                                            <group android:name="group_261">
+                                                <path
+                                                    android:name="path_77"
+                                                    android:pathData="M 15.371 37.745 L 15.647 38.028 C 15.555 37.932 15.471 37.83 15.395 37.722 L 15.371 37.745 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_266">
+                                        <group android:name="group_265">
+                                            <group android:name="group_264">
+                                                <path
+                                                    android:name="path_78"
+                                                    android:pathData="M 31.263 22.233 C 31.368 22.313 31.47 22.397 31.563 22.493 L 31.287 22.21 L 31.263 22.233 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_269">
+                                        <group android:name="group_268">
+                                            <group android:name="group_267">
+                                                <path
+                                                    android:name="path_79"
+                                                    android:pathData="M 27.341 34.087 C 23.887 37.458 19.916 39.268 17.371 38.864 C 16.677 38.754 16.089 38.48 15.647 38.028 L 18.165 40.608 C 20.228 42.722 25.463 40.958 29.858 36.668 C 34.253 32.378 36.143 27.187 34.08 25.073 L 31.562 22.493 C 32.004 22.946 32.263 23.541 32.357 24.237 C 32.7 26.79 30.794 30.716 27.341 34.087 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_272">
+                                <path
+                                    android:name="path_80"
+                                    android:pathData="M 31.263 22.233 C 29.028 20.546 24.067 22.336 19.87 26.433 C 15.673 30.53 13.763 35.446 15.396 37.721 C 15.473 37.828 15.555 37.932 15.648 38.027 C 16.09 38.48 16.678 38.753 17.372 38.863 C 19.916 39.267 23.888 37.457 27.342 34.086 C 30.796 30.715 32.701 26.788 32.359 24.235 C 32.266 23.539 32.006 22.944 31.564 22.491 C 31.47 22.398 31.369 22.312 31.263 22.233 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="group_288">
+                        <group android:name="group_287">
+                            <group android:name="group_285">
+                                <group android:name="group_284">
+                                    <group android:name="group_277">
+                                        <group android:name="group_276">
+                                            <group android:name="group_275">
+                                                <path
+                                                    android:name="path_81"
+                                                    android:pathData="M 38.382 62.539 L 38.207 62.893 C 38.266 62.774 38.337 62.662 38.412 62.554 L 38.382 62.539 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_280">
+                                        <group android:name="group_279">
+                                            <group android:name="group_278">
+                                                <path
+                                                    android:name="path_82"
+                                                    android:pathData="M 58.281 72.396 C 58.241 72.522 58.195 72.646 58.136 72.765 L 58.311 72.411 L 58.281 72.396 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="group_283">
+                                        <group android:name="group_282">
+                                            <group android:name="group_281">
+                                                <path
+                                                    android:name="path_83"
+                                                    android:pathData="M 45.797 72.622 C 41.473 70.48 38.449 67.332 37.988 64.797 C 37.862 64.106 37.926 63.46 38.206 62.893 L 36.606 66.124 C 35.295 68.771 38.693 73.126 44.196 75.853 C 49.699 78.579 55.223 78.644 56.534 75.997 L 58.134 72.766 C 57.853 73.333 57.378 73.774 56.752 74.093 C 54.458 75.262 50.121 74.764 45.797 72.622 Z"
+                                                    android:fillColor="#c38923"
+                                                    android:strokeWidth="1"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="group_286">
+                                <path
+                                    android:name="path_84"
+                                    android:pathData="M 58.281 72.396 C 59.133 69.728 55.8 65.64 50.545 63.036 C 45.29 60.432 40.018 60.259 38.412 62.553 C 38.336 62.661 38.266 62.773 38.207 62.892 C 37.926 63.459 37.863 64.105 37.989 64.796 C 38.45 67.331 41.473 70.479 45.798 72.621 C 50.122 74.763 54.459 75.261 56.754 74.092 C 57.38 73.773 57.855 73.332 58.136 72.765 C 58.195 72.646 58.241 72.522 58.281 72.396 Z"
+                                    android:fillColor="#eac04c"
+                                    android:strokeWidth="1"/>
+                            </group>
+                        </group>
+                    </group>
+                </group>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="group_290">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="scaleX"
+                    android:duration="300"
+                    android:valueFrom="1"
+                    android:valueTo="1.1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="scaleY"
+                    android:duration="300"
+                    android:valueFrom="1"
+                    android:valueTo="1.1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="scaleX"
+                    android:startOffset="300"
+                    android:duration="301"
+                    android:valueFrom="1.1"
+                    android:valueTo="1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="scaleY"
+                    android:startOffset="300"
+                    android:duration="301"
+                    android:valueFrom="1.1"
+                    android:valueTo="1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="translateX"
+                    android:duration="300"
+                    android:valueFrom="0"
+                    android:valueTo="-5"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="translateY"
+                    android:duration="300"
+                    android:valueFrom="0"
+                    android:valueTo="-5"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="translateX"
+                    android:startOffset="300"
+                    android:duration="301"
+                    android:valueFrom="-5"
+                    android:valueTo="0"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="translateY"
+                    android:startOffset="300"
+                    android:duration="301"
+                    android:valueFrom="-5"
+                    android:valueTo="0"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

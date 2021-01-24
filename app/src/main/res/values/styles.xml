@@ -1,5 +1,9 @@
 <resources>
 
+    <style name="Theme.DDCoinPurse.Launcher">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
     <style name="Widget.Theme.DDCoinPurse.MyView" parent="">
         <item name="android:background">@color/gray_400</item>
     </style>

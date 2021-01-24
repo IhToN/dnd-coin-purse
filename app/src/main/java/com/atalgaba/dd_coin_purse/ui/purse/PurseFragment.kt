@@ -36,6 +36,7 @@ class PurseFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
     }
 
     private var _binding: FragmentPurseBinding? = null
+
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -308,7 +309,7 @@ class PurseFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         // "Use AdRequest.Builder.addTestDevice("ABCDE0123") to get test ads on this device."
         val adRequest = AdRequest
             .Builder()
-            .addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build()
+            .build()
 
         // Start loading the ad in the background.
         adView.loadAd(adRequest)
