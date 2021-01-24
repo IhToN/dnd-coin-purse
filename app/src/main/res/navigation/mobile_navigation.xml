@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.atalgaba.dd_coin_purse.ui.home.PurseFragment"
+        android:name="com.atalgaba.dd_coin_purse.ui.purse.PurseFragment"
         android:label="@string/title_purse"
         tools:layout="@layout/fragment_purse" />
 
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.atalgaba.dd_coin_purse.ui.notifications.NotificationsFragment"
+        android:name="com.atalgaba.dd_coin_purse.ui.conversion_rate.ConversionRateFragment"
         android:label="@string/title_conversion_rate"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_conversion_rate" />
 </navigation>

@@ -6,8 +6,8 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import android.widget.LinearLayout
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
@@ -18,7 +18,9 @@ import com.abubusoft.kripton.android.KriptonLibrary
 import com.atalgaba.dd_coin_purse.customs.objects.Currencies
 import com.atalgaba.dd_coin_purse.helpers.AdsHelper
 import com.google.android.gms.ads.MobileAds
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.switchmaterial.SwitchMaterial
+
 
 class MainActivity : AppCompatActivity() {
     companion object {
@@ -69,6 +71,17 @@ class MainActivity : AppCompatActivity() {
                 settingsDrawer?.closeDrawer(settingsSideDrawer!!)
             } else {
                 settingsDrawer?.openDrawer(settingsSideDrawer!!)
+
+                // hide keyboard and clear focus
+                val inputMethodManager: InputMethodManager = getSystemService(
+                    INPUT_METHOD_SERVICE
+                ) as InputMethodManager
+                if (currentFocus != null) {
+                    inputMethodManager.hideSoftInputFromWindow(
+                        currentFocus!!.windowToken, 0
+                    )
+                    currentFocus!!.clearFocus()
+                }
             }
         }
     }
@@ -126,7 +139,6 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menu_settings -> {
-                Log.d(TAG, "Display settings menu")
                 toggleSettingsDrawer()
                 return true
             }

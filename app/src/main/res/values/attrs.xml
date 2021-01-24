@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="currency" format="enum">
+        <enum name="cp" value="0"/>
+        <enum name="sp" value="1"/>
+        <enum name="ep" value="2"/>
+        <enum name="gp" value="3"/>
+        <enum name="pp" value="4"/>
+    </attr>
+
+    <attr name="quantity" format="integer" />
+</resources>

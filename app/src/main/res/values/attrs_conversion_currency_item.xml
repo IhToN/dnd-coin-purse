@@ -1,5 +1,5 @@
 <resources>
-    <declare-styleable name="CurrencyView">
+    <declare-styleable name="ConversionCurrencyItemView">
         <attr name="currency" />
         <attr name="quantity" />
     </declare-styleable>
