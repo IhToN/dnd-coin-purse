@@ -71,14 +71,14 @@ class ConversionRateFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         currencies =
             if (this::currencies.isInitialized)
                 Currencies.enabled
-                    .sortedByDescending { it.value }
+                    .sortedBy { it.value }
                     .toMutableList()
                     .map {
                         it to (currencies.firstOrNull { (currency, _) -> currency == it }?.second
                             ?: 0.0)
                     }
             else
-                Currencies.enabled.sortedByDescending { it.value }.toMutableList().map { it to 0.0 }
+                Currencies.enabled.sortedBy { it.value }.toMutableList().map { it to 0.0 }
 
         val mainCurrency =
             currencies.firstOrNull { (_, quantity) -> quantity > 0 } ?: currencies.first()
@@ -90,6 +90,7 @@ class ConversionRateFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
 
     private fun calculateCurrencies(from: Currency, value: Double) {
         currencies = currencies.map { (currency, _) ->
+            Log.d(TAG, "${from.getName(mActivity)} => ${currency.getName(mActivity)}: $value * ${from.value} / ${currency.value}")
             when (currency) {
                 from -> currency to value // retain
                 else -> currency to (value * from.value / currency.value) // replace
