@@ -1,11 +1,13 @@
 package com.atalgaba.dd_coin_purse.ui.conversion_rate
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
@@ -18,6 +20,7 @@ import com.atalgaba.dd_coin_purse.databinding.FragmentConversionRateBinding
 import com.atalgaba.dd_coin_purse.ui.components.ConversionCurrencyItemView
 import com.atalgaba.dd_coin_purse.ui.purse.PurseFragment
 import java.lang.Exception
+import java.text.NumberFormat
 
 class ConversionRateFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
     companion object {
@@ -123,6 +126,7 @@ class ConversionRateFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         }
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private fun getConversionCurrencyItemView(
         currency: Currency,
         quantity: Double
@@ -130,6 +134,9 @@ class ConversionRateFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         val conversionCurrencyItemView = ConversionCurrencyItemView(mActivity)
         conversionCurrencyItemView.currency = currency
         conversionCurrencyItemView.quantity = quantity
+
+        Log.d(TAG, quantity.toString())
+        conversionCurrencyItemView.trimQuantity()
 
         conversionCurrencyItemView.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -139,32 +146,20 @@ class ConversionRateFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
             }
 
             override fun afterTextChanged(s: Editable?) {
-                val cursorPosition: Int =
-                    conversionCurrencyItemView.quantityTextView?.editText?.selectionEnd ?: 0
                 var newValue = "0.0"
                 if (!s.isNullOrEmpty()) {
                     newValue = s.toString()
                 }
 
                 if (conversionCurrencyItemView.hasFocus()) {
-                    calculateCurrencies(currency, newValue.toDouble())
+                    val nf = NumberFormat.getInstance()
+                    calculateCurrencies(currency, nf.parse(newValue)?.toDouble() ?: 0.0)
                 } else {
                     try {
                         conversionCurrencyItemView.removeTextChangedListener(this)
 
                         if (newValue != "") {
-                            val vals = String.format("%.3f", newValue.replace(",", "").toDouble())
-                                .split('.').toMutableList()
-                            vals[0] = vals[0].trimStart('0').padStart(1, '0')
-                            vals[1] = vals[1].trimEnd('0')
-                            val parsedValue =
-                                vals.joinToString(".").trimEnd('.')
-                            conversionCurrencyItemView.setText(parsedValue)
-
-                            val diff = parsedValue.length - newValue.length
-                            conversionCurrencyItemView.quantityTextView?.editText?.setSelection(
-                                cursorPosition + diff
-                            )
+                            conversionCurrencyItemView.trimQuantity()
                         }
                         conversionCurrencyItemView.addTextChangedListener(this)
                     } catch (ex: Exception) {
