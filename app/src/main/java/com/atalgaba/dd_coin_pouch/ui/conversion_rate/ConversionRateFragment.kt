@@ -71,13 +71,14 @@ class ConversionRateFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         currencies =
             if (this::currencies.isInitialized)
                 Currencies.enabled
+                    .sortedByDescending { it.value }
                     .toMutableList()
                     .map {
                         it to (currencies.firstOrNull { (currency, _) -> currency == it }?.second
                             ?: 0.0)
                     }
             else
-                Currencies.enabled.toMutableList().map { it to 0.0 }
+                Currencies.enabled.sortedByDescending { it.value }.toMutableList().map { it to 0.0 }
 
         val mainCurrency =
             currencies.firstOrNull { (_, quantity) -> quantity > 0 } ?: currencies.first()
@@ -126,7 +127,6 @@ class ConversionRateFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         }
     }
 
-    @SuppressLint("ClickableViewAccessibility")
     private fun getConversionCurrencyItemView(
         currency: Currency,
         quantity: Double
@@ -135,7 +135,6 @@ class ConversionRateFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         conversionCurrencyItemView.currency = currency
         conversionCurrencyItemView.quantity = quantity
 
-        Log.d(TAG, quantity.toString())
         conversionCurrencyItemView.trimQuantity()
 
         conversionCurrencyItemView.addTextChangedListener(object : TextWatcher {

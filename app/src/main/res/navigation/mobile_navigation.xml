@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.atalgaba.dd_coin_pouch.ui.dashboard.DashboardFragment"
+        android:name="com.atalgaba.dd_coin_pouch.ui.calculator.CalculatorFragment"
         android:label="@string/title_calculator"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_calculator" />
 
     <fragment
         android:id="@+id/navigation_notifications"

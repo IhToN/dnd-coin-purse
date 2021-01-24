@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="CalculatorCurrencyView">
+        <attr name="currency" />
+        <attr name="quantity" />
+    </declare-styleable>
+</resources>
