@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.atalgaba.dd_coin_purse"
+        applicationId "com.atalgaba.dd_coin_pouch"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -23,11 +23,10 @@ android {
             buildConfigField 'String', 'AD_UNIT_ID', '"ca-app-pub-3940256099942544/6300978111"'
         }
         release {
-            buildConfigField 'String', 'AD_UNIT_ID', '"ca-app-pub-9688493417442968/1903721370"'
-
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField 'String', 'AD_UNIT_ID', 'null'
+
+            buildConfigField 'String', 'AD_UNIT_ID', '"ca-app-pub-9688493417442968/1903721370"'
         }
     }
     buildFeatures {

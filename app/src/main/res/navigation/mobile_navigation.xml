@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.atalgaba.dd_coin_purse.ui.purse.PurseFragment"
-        android:label="@string/title_purse"
-        tools:layout="@layout/fragment_purse" />
+        android:name="com.atalgaba.dd_coin_pouch.ui.pouch.PouchFragment"
+        android:label="@string/title_pouch"
+        tools:layout="@layout/fragment_pouch" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.atalgaba.dd_coin_purse.ui.dashboard.DashboardFragment"
+        android:name="com.atalgaba.dd_coin_pouch.ui.dashboard.DashboardFragment"
         android:label="@string/title_calculator"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.atalgaba.dd_coin_purse.ui.conversion_rate.ConversionRateFragment"
+        android:name="com.atalgaba.dd_coin_pouch.ui.conversion_rate.ConversionRateFragment"
         android:label="@string/title_conversion_rate"
         tools:layout="@layout/fragment_conversion_rate" />
 </navigation>

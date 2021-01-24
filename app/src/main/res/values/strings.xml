@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">D&amp;D Coin Purse</string>
+    <string name="app_name">D&amp;D Coin Pouch</string>
 
     <!-- tabs -->
-    <string name="title_purse">Purse</string>
+    <string name="title_pouch">Pouch</string>
     <string name="title_calculator">Calculator</string>
     <string name="title_conversion_rate">Conversion Rate</string>
 
@@ -21,7 +21,7 @@
     <string name="dialog_coin_edit_title">%1$s %2$s</string>
 
     <!-- snackbars -->
-    <string name="snackbar_purse_modified">Your purse has been updated.</string>
+    <string name="snackbar_pouch_modified">Your pouch has been updated.</string>
 
     <!-- coins -->
     <string name="title_coin_pieces">Coins</string>
