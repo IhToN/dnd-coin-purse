@@ -1,15 +1,12 @@
 package com.atalgaba.dd_coin_purse
 
 import android.app.ActionBar
-import android.opengl.Visibility
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
@@ -19,11 +16,18 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.abubusoft.kripton.android.KriptonLibrary
 import com.atalgaba.dd_coin_purse.customs.objects.Currencies
+import com.atalgaba.dd_coin_purse.helpers.AdsHelper
+import com.google.android.gms.ads.MobileAds
 import com.google.android.material.switchmaterial.SwitchMaterial
 
 class MainActivity : AppCompatActivity() {
+    companion object {
+        const val TAG = "DnD Coin Purse"
+    }
+
     private var settingsDrawer: DrawerLayout? = null
-    private var settingsManageCurrencies: LinearLayout? = null
+    private var settingsSideDrawer: LinearLayout? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +51,9 @@ class MainActivity : AppCompatActivity() {
 
         configureSettingsNavigation()
 
+        MobileAds.initialize(this) {}
+        AdsHelper.initialize(this)
+
         Log.d("Currencies", Currencies.available.toString())
     }
 
@@ -57,39 +64,61 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun toggleSettingsDrawer() {
-        if (settingsDrawer != null && settingsManageCurrencies != null) {
-            if (settingsDrawer?.isDrawerOpen(settingsManageCurrencies!!) == true) {
-                settingsDrawer?.closeDrawer(settingsManageCurrencies!!)
+        if (settingsDrawer != null && settingsSideDrawer != null) {
+            if (settingsDrawer?.isDrawerOpen(settingsSideDrawer!!) == true) {
+                settingsDrawer?.closeDrawer(settingsSideDrawer!!)
             } else {
-                settingsDrawer?.openDrawer(settingsManageCurrencies!!)
+                settingsDrawer?.openDrawer(settingsSideDrawer!!)
             }
         }
     }
 
     private fun configureSettingsNavigation() {
-        settingsDrawer = findViewById(R.id.settings_drawer)
-        settingsManageCurrencies = settingsDrawer?.findViewById(R.id.settings_manage_currencies)
+        settingsDrawer = findViewById(R.id.main_drawer_layout)
+        settingsSideDrawer = settingsDrawer?.findViewById(R.id.settings_side_drawer)
 
         settingsDrawer?.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
 
-        if (settingsManageCurrencies != null) {
-            Currencies.available.forEach { currency ->
-                val currencySwitch = SwitchMaterial(this)
 
-                val lp = ActionBar.LayoutParams(
-                    ViewGroup.LayoutParams.MATCH_PARENT,
-                    ViewGroup.LayoutParams.WRAP_CONTENT
-                )
+        if (settingsSideDrawer != null) {
+            val currencySettings: LinearLayout? =
+                settingsSideDrawer?.findViewById(R.id.settings_manage_currencies)
+            val otherSettings: LinearLayout? = settingsSideDrawer?.findViewById(R.id.settings_other)
 
-                currencySwitch.layoutParams = lp
-                currencySwitch.text = currency.getName(this)
-                currencySwitch.isChecked = currency.enabled
-                currencySwitch.setOnCheckedChangeListener { _, isChecked ->
-                    currency.enabled = isChecked
-                    currency.update()
+            val switchLayoutParams = ActionBar.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+            )
+
+            if (currencySettings !== null) {
+                // currencies switch
+                Currencies.available.forEach { currency ->
+                    val currencySwitch = SwitchMaterial(this)
+
+                    currencySwitch.layoutParams = switchLayoutParams
+                    currencySwitch.text = currency.getName(this)
+                    currencySwitch.isChecked = currency.enabled
+                    currencySwitch.setOnCheckedChangeListener { _, isChecked ->
+                        currency.enabled = isChecked
+                        currency.update()
+                    }
+
+                    currencySettings.addView(currencySwitch)
+                }
+            }
+
+
+            if (otherSettings !== null) {
+                // ads switch
+                val adsSwitch = SwitchMaterial(this)
+                adsSwitch.layoutParams = switchLayoutParams
+                adsSwitch.text = getString(R.string.menu_in_app_ads_switch)
+                adsSwitch.isChecked = AdsHelper.areAdsEnabled
+                adsSwitch.setOnCheckedChangeListener { _, isChecked ->
+                    AdsHelper.areAdsEnabled = isChecked
                 }
 
-                settingsManageCurrencies!!.addView(currencySwitch)
+                otherSettings.addView(adsSwitch)
             }
         }
     }
@@ -97,7 +126,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menu_settings -> {
-                Toast.makeText(this, "Display Settings Menu", Toast.LENGTH_SHORT).show()
+                Log.d(TAG, "Display settings menu")
                 toggleSettingsDrawer()
                 return true
             }

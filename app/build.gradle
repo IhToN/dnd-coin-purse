@@ -19,9 +19,15 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField 'String', 'AD_UNIT_ID', '"ca-app-pub-3940256099942544/6300978111"'
+        }
         release {
+            buildConfigField 'String', 'AD_UNIT_ID', '"ca-app-pub-9688493417442968/1903721370"'
+
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'AD_UNIT_ID', 'null'
         }
     }
     buildFeatures {
@@ -58,6 +64,7 @@ dependencies {
 //    annotationProcessor "com.abubusoft:kripton-processor:7.0.0"
     implementation "com.abubusoft:kripton-android-library:7.0.0"
     implementation "androidx.sqlite:sqlite-ktx:2.1.0"
+    implementation 'com.google.android.gms:play-services-ads:19.7.0'
 
     // Annotator Deps
     kapt "com.abubusoft:kripton-processor:7.0.0"
