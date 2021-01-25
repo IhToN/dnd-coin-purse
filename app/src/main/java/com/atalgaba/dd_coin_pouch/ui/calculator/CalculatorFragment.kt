@@ -63,6 +63,11 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         return mView
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Currencies.unregisterOnCurrencyUpdateListener(this)
+    }
+
     private fun initializeCurrencies() {
         currencies =
             if (this::currencies.isInitialized)

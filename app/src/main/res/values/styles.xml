@@ -5,6 +5,6 @@
     </style>
 
     <style name="Widget.Theme.DDCoinPouch.MyView" parent="">
-        <item name="android:background">@color/gray_400</item>
+        <item name="android:background">@color/gray_600</item>
     </style>
 </resources>

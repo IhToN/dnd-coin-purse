@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- The background color, preferably the same as your normal theme -->
-    <item android:drawable="@android:color/white" />
+    <item android:drawable="@color/gray_800" />
 
     <!-- Your product logo - 144dp color version of your app icon -->
     <item>
@@ -9,7 +9,7 @@
         <bitmap
             android:gravity="center"
             android:src="@drawable/ic_launcher_foreground"
-            android:tint="@color/purple_500" />
+            android:tint="@color/gold_500" />
 
     </item>
 </layer-list>
