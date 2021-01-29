@@ -34,7 +34,7 @@ object Currencies {
         )
         currencies.add(
             Currency(
-                1,
+                2,
                 "title_coin_silver",
                 "title_coin_silver_code",
                 true,
@@ -44,7 +44,7 @@ object Currencies {
         )
         currencies.add(
             Currency(
-                1,
+                3,
                 "title_coin_electrum",
                 "title_coin_electrum_code",
                 true,
@@ -54,7 +54,7 @@ object Currencies {
         )
         currencies.add(
             Currency(
-                1,
+                4,
                 "title_coin_gold",
                 "title_coin_gold_code",
                 true,
@@ -64,7 +64,7 @@ object Currencies {
         )
         currencies.add(
             Currency(
-                1,
+                5,
                 "title_coin_platinum",
                 "title_coin_platinum_code",
                 true,
