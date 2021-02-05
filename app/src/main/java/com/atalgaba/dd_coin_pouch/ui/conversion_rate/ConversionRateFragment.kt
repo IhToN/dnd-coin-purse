@@ -1,13 +1,11 @@
 package com.atalgaba.dd_coin_pouch.ui.conversion_rate
 
-import android.annotation.SuppressLint
 import android.app.Activity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
-import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
@@ -17,6 +15,7 @@ import com.atalgaba.dd_coin_pouch.R
 import com.atalgaba.dd_coin_pouch.customs.objects.Currencies
 import com.atalgaba.dd_coin_pouch.customs.persistence.models.Currency
 import com.atalgaba.dd_coin_pouch.databinding.FragmentConversionRateBinding
+import com.atalgaba.dd_coin_pouch.helpers.SavedInstanceHelper
 import com.atalgaba.dd_coin_pouch.ui.components.ConversionCurrencyItemView
 import com.atalgaba.dd_coin_pouch.ui.pouch.PouchFragment
 import java.lang.Exception
@@ -82,15 +81,16 @@ class ConversionRateFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
 
         val mainCurrency =
             currencies.firstOrNull { (_, quantity) -> quantity > 0 } ?: currencies.first()
-        calculateCurrencies(
-            mainCurrency.first,
-            if (mainCurrency.second > 0) mainCurrency.second else 1.0
-        )
+
+        calculateCurrencies(mainCurrency.first, SavedInstanceHelper.conversionBaseCurrencyQuantity)
     }
 
     private fun calculateCurrencies(from: Currency, value: Double) {
         currencies = currencies.map { (currency, _) ->
-            Log.d(TAG, "${from.getName(mActivity)} => ${currency.getName(mActivity)}: $value * ${from.value} / ${currency.value}")
+            Log.d(
+                TAG,
+                "${from.getName(mActivity)} => ${currency.getName(mActivity)}: $value * ${from.value} / ${currency.value}"
+            )
             when (currency) {
                 from -> currency to value // retain
                 else -> currency to (value * from.value / currency.value) // replace
@@ -106,6 +106,11 @@ class ConversionRateFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
             initializeCurrencies()
             list.removeAllViews()
         }
+
+        val mainCurrency =
+            currencies.firstOrNull { (_, quantity) -> quantity > 0 } ?: currencies.first()
+        SavedInstanceHelper.conversionBaseCurrencyQuantity = mainCurrency.second
+
 
         if (list.childCount == 0) {
             currencies.forEach { (currency, quantity) ->

@@ -15,6 +15,7 @@ import com.atalgaba.dd_coin_pouch.customs.inputs.InputFilterIntBetween
 import com.atalgaba.dd_coin_pouch.customs.objects.Currencies
 import com.atalgaba.dd_coin_pouch.customs.persistence.models.Currency
 import com.atalgaba.dd_coin_pouch.databinding.FragmentCalculatorBinding
+import com.atalgaba.dd_coin_pouch.helpers.SavedInstanceHelper
 import com.atalgaba.dd_coin_pouch.ui.components.CalculatorCurrencyView
 import com.atalgaba.dd_coin_pouch.ui.pouch.PouchFragment
 import com.google.android.flexbox.FlexboxLayout
@@ -30,9 +31,6 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
 
     private lateinit var mActivity: Activity
     private lateinit var mView: View
-
-    private lateinit var currencies: MutableList<Pair<Currency, Int?>>
-    private var players: Int = 1
 
     // todo: check performance optimization
 
@@ -69,12 +67,12 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
     }
 
     private fun initializeCurrencies() {
-        currencies =
-            if (this::currencies.isInitialized)
+        SavedInstanceHelper.calculatorCurrencies =
+            if (!SavedInstanceHelper.calculatorCurrencies.isNullOrEmpty())
                 Currencies.enabled
                     .sortedByDescending { it.value }
                     .map {
-                        it to currencies.firstOrNull { (currency, _) -> currency == it }?.second
+                        it to SavedInstanceHelper.calculatorCurrencies!!.firstOrNull { (currency, _) -> currency == it }?.second
                     }
                     .toMutableList()
             else
@@ -124,18 +122,18 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         }
 
         if (list.childCount == 0) {
-            currencies.forEach { (currency, quantity) ->
+            SavedInstanceHelper.calculatorCurrencies?.forEach { (currency, quantity) ->
                 run {
                     list.addView(getConversionCurrencyItemView(currency, quantity))
                 }
             }
 
-            list.addView(getPlayersItemView(players))
+            list.addView(getPlayersItemView(SavedInstanceHelper.calculatorPlayers))
         } else {
             list.children.forEach {
                 if (it is CalculatorCurrencyView && it.currency != filterCurrency) {
                     val currencyPair: Pair<Currency, Int?>? =
-                        currencies.firstOrNull { (currency, _) ->
+                        SavedInstanceHelper.calculatorCurrencies?.firstOrNull { (currency, _) ->
                             currency == it.currency
                         }
                     if (currencyPair != null) {
@@ -148,19 +146,20 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
 
     private fun divideBetweenPlayers() {
         val filterCurrencies =
-            currencies.filter { pair -> pair.second != null && pair.second!! > 0 }
+            SavedInstanceHelper.calculatorCurrencies?.filter { pair -> pair.second != null && pair.second!! > 0 }
 
-        val forEach: String = filterCurrencies.mapNotNull { (currency, quantity) ->
-            val calculated = floor(((quantity ?: 0) / players).toDouble()).toInt()
-
-            coinToString(currency, calculated)
-        }.joinToString(" ").trim(',', ' ')
-
-        val remaining: String = filterCurrencies.mapNotNull { (currency, quantity) ->
-            val calculated = (quantity ?: 0).rem(players)
+        val forEach: String = filterCurrencies?.mapNotNull { (currency, quantity) ->
+            val calculated =
+                floor(((quantity ?: 0) / SavedInstanceHelper.calculatorPlayers).toDouble()).toInt()
 
             coinToString(currency, calculated)
-        }.joinToString(" ").trim(',', ' ')
+        }?.joinToString(" ")?.trim(',', ' ') ?: ""
+
+        val remaining: String = filterCurrencies?.mapNotNull { (currency, quantity) ->
+            val calculated = (quantity ?: 0).rem(SavedInstanceHelper.calculatorPlayers)
+
+            coinToString(currency, calculated)
+        }?.joinToString(" ")?.trim(',', ' ') ?: ""
 
         updateCoinsForEach(forEach)
         updateCoinsRemaining(remaining)
@@ -183,17 +182,18 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
             }
 
             override fun afterTextChanged(s: Editable?) {
-                currencies = currencies.map { pair ->
-                    pair.copy(
-                        second = if (pair.first != currency) {
-                            pair.second
-                        } else if (!s?.toString().isNullOrEmpty()) {
-                            s.toString().toInt()
-                        } else {
-                            null
-                        }
-                    )
-                }.toMutableList()
+                SavedInstanceHelper.calculatorCurrencies =
+                    SavedInstanceHelper.calculatorCurrencies?.map { pair ->
+                        pair.copy(
+                            second = if (pair.first != currency) {
+                                pair.second
+                            } else if (!s?.toString().isNullOrEmpty()) {
+                                s.toString().toInt()
+                            } else {
+                                null
+                            }
+                        )
+                    }?.toMutableList()
                 divideBetweenPlayers()
             }
         })
@@ -218,7 +218,7 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
             }
 
             override fun afterTextChanged(s: Editable?) {
-                players = if (!s?.toString().isNullOrEmpty()) {
+                SavedInstanceHelper.calculatorPlayers = if (!s?.toString().isNullOrEmpty()) {
                     s.toString().toInt()
                 } else {
                     1
