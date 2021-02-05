@@ -15,10 +15,13 @@ import com.atalgaba.dd_coin_pouch.customs.inputs.InputFilterIntBetween
 import com.atalgaba.dd_coin_pouch.customs.objects.Currencies
 import com.atalgaba.dd_coin_pouch.customs.persistence.models.Currency
 import com.atalgaba.dd_coin_pouch.databinding.FragmentCalculatorBinding
+import com.atalgaba.dd_coin_pouch.helpers.CurrencyHelper
 import com.atalgaba.dd_coin_pouch.helpers.SavedInstanceHelper
 import com.atalgaba.dd_coin_pouch.ui.components.CalculatorCurrencyView
 import com.atalgaba.dd_coin_pouch.ui.pouch.PouchFragment
 import com.google.android.flexbox.FlexboxLayout
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.snackbar.Snackbar
 import kotlin.math.floor
 
 class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
@@ -31,6 +34,9 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
 
     private lateinit var mActivity: Activity
     private lateinit var mView: View
+
+    private var coinsForEach: List<Pair<Currency, Int?>>? = null
+    private var coinsRemaining: List<Pair<Currency, Int?>>? = null
 
     // todo: check performance optimization
 
@@ -55,6 +61,9 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         Currencies.registerOnCurrencyUpdateListener(this)
 
         initializeCurrencies()
+
+        initializeFloatingButtons()
+
         refreshTable()
         divideBetweenPlayers()
 
@@ -64,6 +73,16 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
     override fun onDestroyView() {
         super.onDestroyView()
         Currencies.unregisterOnCurrencyUpdateListener(this)
+    }
+
+    private fun initializeFloatingButtons() {
+        binding.floatingDeleteButton.setOnClickListener {
+            showDeleteDialog()
+        }
+
+        binding.floatingTransferButton.setOnClickListener {
+            showTransferDialog()
+        }
     }
 
     private fun initializeCurrencies() {
@@ -148,17 +167,32 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         val filterCurrencies =
             SavedInstanceHelper.calculatorCurrencies?.filter { pair -> pair.second != null && pair.second!! > 0 }
 
-        val forEach: String = filterCurrencies?.mapNotNull { (currency, quantity) ->
-            val calculated =
+        coinsForEach = filterCurrencies?.map { (currency, quantity) ->
+            Pair(
+                currency,
                 floor(((quantity ?: 0) / SavedInstanceHelper.calculatorPlayers).toDouble()).toInt()
+            )
+        }
 
-            coinToString(currency, calculated)
+        coinsRemaining = filterCurrencies?.map { (currency, quantity) ->
+            Pair(
+                currency,
+                (quantity ?: 0).rem(SavedInstanceHelper.calculatorPlayers)
+            )
+        }
+
+        val forEach: String = coinsForEach?.mapNotNull { (currency, quantity) ->
+            coinToString(
+                currency,
+                quantity ?: 0
+            )
         }?.joinToString(" ")?.trim(',', ' ') ?: ""
 
-        val remaining: String = filterCurrencies?.mapNotNull { (currency, quantity) ->
-            val calculated = (quantity ?: 0).rem(SavedInstanceHelper.calculatorPlayers)
-
-            coinToString(currency, calculated)
+        val remaining: String = coinsRemaining?.mapNotNull { (currency, quantity) ->
+            coinToString(
+                currency,
+                quantity ?: 0
+            )
         }?.joinToString(" ")?.trim(',', ' ') ?: ""
 
         updateCoinsForEach(forEach)
@@ -229,6 +263,69 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
         })
 
         return playersView
+    }
+
+    private fun undoDeletion() {
+        val previousLoot = SavedInstanceHelper.calculatorCurrencies?.toMutableList()
+        Snackbar.make(mView, R.string.snackbar_calculator_reset, Snackbar.LENGTH_SHORT)
+            .setAction(R.string.action_undo) {
+                SavedInstanceHelper.calculatorCurrencies = previousLoot
+                refreshTable()
+            }.show()
+    }
+
+    private fun showDeleteDialog() {
+        MaterialAlertDialogBuilder(mActivity)
+            .setTitle(R.string.dialog_calculator_delete_title)
+            .setMessage(R.string.dialog_calculator_delete_message)
+            .setPositiveButton(R.string.action_yes) { _, _ ->
+
+                undoDeletion()
+
+                SavedInstanceHelper.calculatorCurrencies = Currencies.enabled
+                    .sortedByDescending { it.value }
+                    .map { it to null }
+                    .toMutableList()
+                refreshTable()
+            }
+            .setNegativeButton(R.string.action_no) { _, _ -> }
+            .show()
+    }
+
+    private fun undoTransfer() {
+        val previousPouch: List<Pair<Currency, Int>> =
+            Currencies.available.map { currency ->
+                val quantity = currency.quantity
+                Pair(currency, quantity)
+            }
+
+        Snackbar.make(mView, R.string.snackbar_pouch_modified, Snackbar.LENGTH_SHORT)
+            .setAction(R.string.action_undo) {
+                previousPouch.forEach { (currency, quantity) ->
+                    currency.quantity = quantity
+                    currency.update()
+                }
+                refreshTable()
+            }.show()
+    }
+
+    private fun showTransferDialog() {
+        MaterialAlertDialogBuilder(mActivity)
+            .setTitle(R.string.dialog_calculator_delete_title)
+            .setMessage(R.string.dialog_calculator_delete_message)
+            .setPositiveButton(R.string.action_yes) { _, _ ->
+
+                undoTransfer()
+
+                coinsForEach?.forEach { (currency, quantity) ->
+                    if (quantity != null) {
+                        currency.quantity += quantity
+                        currency.update()
+                    }
+                }
+            }
+            .setNegativeButton(R.string.action_no) { _, _ -> }
+            .show()
     }
 
     override fun onCurrencyUpdate() {

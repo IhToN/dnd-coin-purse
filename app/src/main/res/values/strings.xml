@@ -18,10 +18,15 @@
     <!-- dialogs -->
     <string name="dialog_currency_conversion_title">Do you want to convert your coins?</string>
     <string name="dialog_currency_conversion_message">This will optimize your coins to weight as few as possible.</string>
+    <string name="dialog_calculator_delete_title">Do you want to reset the calculator?</string>
+    <string name="dialog_calculator_delete_message">This will remove the looted coins but won\'t change the number of players to divide the loot into.</string>
+    <string name="dialog_calculator_transfer_title">Do you want to store your part?</string>
+    <string name="dialog_calculator_transfer_message">This will add your part to your pouch. Make sure to track the remaining coins!</string>
     <string name="dialog_coin_edit_title">%1$s %2$s</string>
 
     <!-- snackbars -->
     <string name="snackbar_pouch_modified">Your pouch has been updated.</string>
+    <string name="snackbar_calculator_reset">The calculator has been reset.</string>
 
     <!-- coins -->
     <string name="title_coin_pieces">Coins</string>
