@@ -4,6 +4,8 @@ import android.content.Context
 import android.text.TextWatcher
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.atalgaba.dd_coin_pouch.R
@@ -86,6 +88,19 @@ class ConversionCurrencyItemView : LinearLayout {
         currencyTextView?.text = currencyName
         quantityTextView?.editText?.setText(_quantity.toString())
         quantityTextView?.editText?.setSelection(quantityTextView?.editText?.text?.length ?: 0)
+
+        quantityTextView?.editText?.setOnEditorActionListener { v, actionId, _ ->
+            when (actionId) {
+                EditorInfo.IME_ACTION_DONE,
+                EditorInfo.IME_ACTION_UNSPECIFIED -> {
+                    val imm: InputMethodManager = v.context
+                        .getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                    imm.hideSoftInputFromWindow(v.windowToken, 0)
+                    true
+                }
+                else -> false
+            }
+        }
     }
 
     fun addTextChangedListener(textWatcher: TextWatcher) {
