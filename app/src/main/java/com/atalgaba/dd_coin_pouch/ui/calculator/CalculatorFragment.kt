@@ -311,8 +311,8 @@ class CalculatorFragment : Fragment(), Currencies.OnCurrencyUpdateListener {
 
     private fun showTransferDialog() {
         MaterialAlertDialogBuilder(mActivity)
-            .setTitle(R.string.dialog_calculator_delete_title)
-            .setMessage(R.string.dialog_calculator_delete_message)
+            .setTitle(R.string.dialog_calculator_transfer_title)
+            .setMessage(R.string.dialog_calculator_transfer_message)
             .setPositiveButton(R.string.action_yes) { _, _ ->
 
                 undoTransfer()
